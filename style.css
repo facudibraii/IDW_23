@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e8e8eb;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+
+header {
+  background: #2c3e50;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.9);
+  padding: 15px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+}
+
+nav a {
+  color: #f3f3f3;
+  text-decoration: none;
+  font-weight: bold; 
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: #f7f7f7;
+  background: #91919160;
+  transition: 0.3s;
+}
+
+
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  color: #34495e;
+}
+
+
+form {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #537394;
+}
+
+/* ttablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #2c3e50;
+  color: #fff;
+}
+
+
+
+
+footer {
+  text-align: center;
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
+
+@media (max-width:768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  table {
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  form input, form button {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+
+
